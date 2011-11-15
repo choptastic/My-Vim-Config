@@ -14,6 +14,8 @@ if v:progname =~? "evim"
   finish
 endif
 
+call pathogen#infect()
+
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -66,7 +68,7 @@ if has("autocmd")
   autocmd FileType text setlocal textwidth=78
 
   autocmd FileType erlang setlocal shiftwidth=4 tabstop=4
-  autocmd FileType erlang setlocal foldmethod=indent
+  " autocmd FileType erlang setlocal foldmethod=indent
 
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
@@ -84,3 +86,4 @@ else
 
 endif " has("autocmd")
 
+highlight Folded ctermfg=2 ctermbg=9
