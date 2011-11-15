@@ -87,3 +87,5 @@ else
 endif " has("autocmd")
 
 highlight Folded ctermfg=2 ctermbg=9
+
+let $PATH = "/www/nitrogen-git/nitrogen/rel/nitrogen/erts-5.8.3/bin:" . $PATH
