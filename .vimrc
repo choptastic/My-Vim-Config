@@ -66,6 +66,7 @@ if has("autocmd")
   autocmd FileType text setlocal textwidth=78
 
   autocmd FileType erlang setlocal shiftwidth=4 tabstop=4
+  autocmd FileType erlang setlocal foldmethod=indent
 
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
