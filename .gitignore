@@ -1,0 +1,4 @@
+bundle
+vim-pathogen
+*~
+*.sw?
