@@ -68,7 +68,8 @@ if has("autocmd")
   " For all text files set 'textwidth' to 78 characters.
   autocmd FileType text setlocal textwidth=78
 
-  autocmd FileType erlang setlocal shiftwidth=4 tabstop=4
+  
+  " autocmd FileType erlang setlocal shiftwidth=4 tabstop=4
   let erlang_folding=1
   " autocmd FileType erlang setlocal foldmethod=indent
 
@@ -89,5 +90,6 @@ else
 endif " has("autocmd")
 
 highlight Folded ctermfg=2 ctermbg=9
+setlocal shiftwidth=4 tabstop=4
 
 let $PATH = "/www/nitrogen-git/nitrogen/rel/nitrogen/erts-5.9/bin:" . $PATH
