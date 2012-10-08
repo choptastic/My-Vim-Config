@@ -93,3 +93,12 @@ highlight Folded ctermfg=2 ctermbg=9
 setlocal shiftwidth=4 tabstop=4
 
 let $PATH = "/www/nitrogen-git/nitrogen/rel/nitrogen/erts-5.9/bin:" . $PATH
+
+" Makes vim switch between relative line numbers in normal mode, and absolute
+" line numbers in insert mode
+
+set rnu
+au InsertEnter * :set nu
+au InsertLeave * :set rnu
+au FocusLost * :set nu
+au FocusGained * :set rnu
