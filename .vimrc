@@ -92,7 +92,7 @@ endif " has("autocmd")
 highlight Folded ctermfg=2 ctermbg=9
 setlocal shiftwidth=4 tabstop=4
 
-let $PATH = "/www/nitrogen-git/nitrogen/rel/nitrogen/erts-5.9/bin:" . $PATH
+let $PATH = "/www/nitrogen-git/nitrogen/rel/nitrogen/erts-5.9/bin:/www/nitrogen-git/nitrogen/rel/nitrogen/erts-5.9.2/bin:" . $PATH
 
 " Makes vim switch between relative line numbers in normal mode, and absolute
 " line numbers in insert mode
